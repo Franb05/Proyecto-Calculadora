@@ -25,3 +25,18 @@ function division(num1, num2) {
   return resultado;
 }
 console.log(division(12, 4));
+
+function operate(operador, num1, num2) {
+  let resultado;
+  if (operador === "+") {
+    resultado = num1 + num2;
+  } else if (operador === "-") {
+    resultado = num1 - num2;
+  } else if (operador === "*") {
+    resultado = num1 * num2;
+  } else if (operador === "/") {
+    resultado = num1 / num2;
+  }
+  return resultado;
+}
+console.log(operate("+", 3, 3));

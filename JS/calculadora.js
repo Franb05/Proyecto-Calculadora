@@ -9,7 +9,11 @@ const botonesNumeros = document.querySelectorAll(".btn-numeros button");
 console.log(botonesNumeros);
 
 botonesNumeros.forEach((boton) => {
-  boton.addEventListener("click", () => {});
+  boton.addEventListener("click", () => {
+    num1 = Number(boton.textContent);
+    pantalla.textContent = num1;
+    console.log(num1);
+  });
 });
 
 function suma(num1, num2) {

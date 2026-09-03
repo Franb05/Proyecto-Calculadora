@@ -2,6 +2,16 @@ let num1;
 let operador;
 let num2;
 
+let pantalla = document.querySelector("#pantalla");
+
+const botonesNumeros = document.querySelectorAll(".btn-numeros button");
+
+console.log(botonesNumeros);
+
+botonesNumeros.forEach((boton) => {
+  boton.addEventListener("click", () => {});
+});
+
 function suma(num1, num2) {
   let resultado = num1 + num2;
   return resultado;
